@@ -1,0 +1,5 @@
+domain <%= domain %>
+<% servers.each do | val | -%>
+nameserver <%= val %>
+<% end -%>
+search <%= search_domain.join(" ") %>
